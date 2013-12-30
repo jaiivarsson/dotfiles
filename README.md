@@ -1,3 +1,18 @@
+# Jai Ivarsson’s Dot Files
+
+## Attribution
+
+These were originally forked from [Ryan Bates](http://github.com/ryanb/dotfiles).
+
+I got the Brewfile idea from [Mathias Bynens](https://github.com/mathiasbynens).
+
+## Installation
+```sh
+git clone git://github.com/jaijaz/dotfiles ~/.dotfiles
+cd ~/.dotfiles
+rake install
+```
+
 # Ryan Bates Dot Files
 
 These are config files to set up a system the way I like it. It now uses [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh). If you would like to see my old, custom Bash and ZSH config, check out [this branch](https://github.com/ryanb/dotfiles/tree/custom-bash-zsh)
@@ -49,6 +64,14 @@ If you're using git, you'll notice the current branch name shows up in the promp
 
 There are several features enabled in Ruby's irb including history and completion. Many convenience methods are added as well such as "ri" which can be used to get inline documentation in IRB. See irbrc file for details.
 
+
+## Install Homebrew formulae
+
+When setting up a new Mac, you may want to install some common [Homebrew](http://brew.sh/) formulae (after installing Homebrew, of course):
+
+```bash
+brew bundle ~/Brewfile
+```
 
 ## Uninstall
 
