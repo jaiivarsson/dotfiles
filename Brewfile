@@ -8,7 +8,6 @@ upgrade
 #install homebrew/dupes/screen
 
 # Install other useful binaries
-install git
 install rbenv
 install ruby-build
 install postgresql
