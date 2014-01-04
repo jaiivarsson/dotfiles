@@ -16,6 +16,9 @@ alias composer=composer
 alias -g pgsqlstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias -g pgsqlstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias -g grunt=grunt
+alias -g reloadhosts='dscacheutil -flushcache'
+
+# Localist stuff
 alias -g management="ssh prod-mgmt02.localist.co.nz"
 alias gitl="git log --pretty=format:'%ci  %h  %an   %s'"
 alias gitmaster="git checkout develop && git pull && git checkout master && git pull && git fetch --tags && git describe"
