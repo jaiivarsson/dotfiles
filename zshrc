@@ -19,7 +19,7 @@ alias -g grunt=grunt
 alias -g reloadhosts='dscacheutil -flushcache'
 
 # Localist stuff
-alias -g management="ssh prod-mgmt02.localist.co.nz"
+alias -g management="ssh "
 alias gitl="git log --pretty=format:'%ci  %h  %an   %s'"
 alias gitmaster="git checkout develop && git pull && git checkout master && git pull && git fetch --tags && git describe"
 
