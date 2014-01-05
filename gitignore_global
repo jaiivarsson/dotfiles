@@ -7,3 +7,4 @@ Vagrantfile
 .idea
 hack.json
 .tags
+.gemtags
