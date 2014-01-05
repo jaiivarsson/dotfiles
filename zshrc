@@ -52,11 +52,11 @@ alias gitmaster="git checkout develop && git pull && git checkout master && git 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx ruby pow)
+plugins=(git osx ruby pow rbates jaiivarsson)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:$PATH
 
 # as per rbenv instructions to give tab completion
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

@@ -6,3 +6,4 @@ Vagrantfile
 .powenv
 .idea
 hack.json
+.tags
