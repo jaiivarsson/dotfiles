@@ -5,7 +5,7 @@
 	co = checkout
 [core]
 	excludesfile = <%= ENV['HOME'] %>/.gitignore_global
-	editor = subl -w
+	editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
@@ -35,8 +35,3 @@
 	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
 [push]
 	default = simple
-[github]
-	user = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
-	token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
-[credential]
-  helper = osxkeychain
