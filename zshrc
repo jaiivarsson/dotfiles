@@ -17,6 +17,10 @@ alias -g pgsqlstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgre
 alias -g pgsqlstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias -g grunt=grunt
 alias -g reloadhosts='dscacheutil -flushcache'
+alias -g phpmysqlstart='launchctl load -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php53.plist && launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
+alias -g phpmysqlstop='launchctl unload -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php53.plist && launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
+alias -g nginxstart='launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist'
+alias -g nginxstop='launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist'
 
 # Localist stuff
 alias -g management="ssh "
