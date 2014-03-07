@@ -19,11 +19,11 @@ alias -g grunt=grunt
 alias -g reloadhosts='dscacheutil -flushcache'
 alias -g phpmysqlstart='launchctl load -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php53.plist && launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
 alias -g phpmysqlstop='launchctl unload -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php53.plist && launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
-alias -g nginxstart='launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist'
-alias -g nginxstop='launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist'
+alias -g nginxstart='sudo nginx'
+alias -g nginxstop='sudo nginx -s stop'
 
 # Localist stuff
-alias -g management="ssh "
+alias -g management="ssh <%= print("Localist Mgmt Server: "); STDOUT.flush; STDIN.gets.chomp %>"
 alias gitl="git log --pretty=format:'%ci  %h  %an   %s'"
 alias gitmaster="git checkout develop && git pull && git checkout master && git pull && git fetch --tags && git describe"
 
