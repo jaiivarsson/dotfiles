@@ -21,6 +21,7 @@ alias -g phpmysqlstart='launchctl load -w ~/Library/LaunchAgents/homebrew-php.jo
 alias -g phpmysqlstop='launchctl unload -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php53.plist && launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
 alias -g nginxstart='sudo nginx'
 alias -g nginxstop='sudo nginx -s stop'
+alias -g p4merge='/Applications/p4merge.app/Contents/Resources/launchp4merge'
 
 # Localist stuff
 alias -g management="ssh <%= print("Localist Mgmt Server: "); STDOUT.flush; STDIN.gets.chomp %>"
