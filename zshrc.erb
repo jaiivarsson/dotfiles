@@ -28,6 +28,7 @@ alias -g management="ssh <%= print("Localist Mgmt Server: "); STDOUT.flush; STDI
 alias -g manhermes="ssh hermes@<%= print("Localist Mgmt Server: "); STDOUT.flush; STDIN.gets.chomp %>"
 alias gitl="git log --pretty=format:'%ci  %h  %an   %s'"
 alias gitmaster="git checkout develop && git pull && git checkout master && git pull && git fetch --tags && git describe"
+alias -g exportawsfoundry="export AWS_ACCESS_KEY=<%= print("AWS_ACCESS_KEY: "); STDOUT.flush; STDIN.gets.chomp %> && export AWS_SECRET_KEY=<%= print("AWS_SECRET_KEY: "); STDOUT.flush; STDIN.gets.chomp %> && export AWS_DEFAULT_REGIONS=ap-southeast-2"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
