@@ -68,5 +68,8 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/lo
 # as per rbenv instructions to give tab completion
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
+# as per brew php55 instructions
+export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
