@@ -11,7 +11,14 @@ upgrade
 install rbenv
 install ruby-build
 install postgresql
+install mysql
 install redis
+install macvim
+
+tap homebrew/dupes
+tap josegonzalez/php
+install php55 --with-fpm --with-homebrew-curl --with-mysql --with-pgsql --with-debug
+install php55-xdebug
 
 # Remove outdated versions from the cellar
 cleanup
