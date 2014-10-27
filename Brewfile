@@ -17,7 +17,7 @@ install macvim
 
 tap homebrew/dupes
 tap josegonzalez/php
-install php55 --with-fpm --with-homebrew-curl --with-mysql --with-pgsql --with-debug
+install php55 --with-mysql --with-pgsql --with-debug
 install php55-xdebug
 
 # Remove outdated versions from the cellar
