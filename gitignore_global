@@ -9,3 +9,5 @@ Vagrantfile
 hack.json
 .tags
 .gemtags
+tags/
+tags
