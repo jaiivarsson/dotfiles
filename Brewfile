@@ -15,6 +15,7 @@ install mysql
 install redis
 install macvim
 install ack
+install ctags
 
 tap homebrew/dupes
 tap josegonzalez/php
