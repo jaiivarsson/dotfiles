@@ -14,6 +14,7 @@ install postgresql
 install mysql
 install redis
 install macvim
+install ack
 
 tap homebrew/dupes
 tap josegonzalez/php
