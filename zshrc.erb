@@ -71,5 +71,11 @@ if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 # as per brew php55 instructions
 export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 
+# composer and drush
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export NVM_DIR="/Users/jaiivarsson/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
