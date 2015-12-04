@@ -22,7 +22,7 @@ install aspell --lang=en
 
 tap homebrew/dupes
 tap josegonzalez/php
-install php55 --with-mysql --with-pgsql --with-debug
+install php55 --with-mysql --with-postgresql --with-debug --with-imap
 install php55-xdebug
 
 # Remove outdated versions from the cellar
