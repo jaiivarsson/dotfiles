@@ -16,6 +16,7 @@ install redis
 install macvim
 install ack
 install ctags
+install imagemagick
 
 # used by the ffi-aspell gem
 install aspell --lang=en
