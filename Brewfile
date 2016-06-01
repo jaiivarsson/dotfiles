@@ -25,6 +25,8 @@ tap homebrew/dupes
 tap josegonzalez/php
 install php55 --with-mysql --with-postgresql --with-debug --with-imap
 install php55-xdebug
+install php55-mongo
+install php55-memcached
 
 # Remove outdated versions from the cellar
 cleanup
