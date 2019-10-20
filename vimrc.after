@@ -1,3 +1,20 @@
 color molokai
 let NERDTreeShowHidden=1
 autocmd BufWritePre * :%s/\s\+$//e
+
+
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_mode_map = {
+        "\ "mode": "active",
+        "\ "active_filetypes": ["ruby", "php", "javascript", "handlebars"],
+        "\ "passive_filetypes": [] }
+"let g:syntastic_javascript_checkers = ['eslint']
+"let g:syntastic_javascript_eslint_exe = 'npm run lint:js --'
+"let g:syntastic_handlebars_checkers = ['html/eslint']
+"let g:syntastic_handlebars_eslint_exe = 'npm run lint:hbs --'
