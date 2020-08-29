@@ -35,6 +35,8 @@ task :install do
       link_file(file)
     end
   end
+  puts "reloading zshrc"
+  system %Q{. ~/.zshrc}
 end
 
 def replace_file(file)

@@ -10,17 +10,17 @@ ZSH_THEME="jaiivarsson"
 # Example aliases
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
-alias -g subl=subl
+# alias -g subl=subl
 # alias -g cap=cap
-alias composer=composer
-alias -g pgsqlstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias -g pgsqlstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-alias -g grunt=grunt
-alias -g reloadhosts='dscacheutil -flushcache'
-alias -g phpmysqlstart='launchctl load -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php53.plist && launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
-alias -g phpmysqlstop='launchctl unload -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php53.plist && launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
-alias -g nginxstart='sudo nginx'
-alias -g nginxstop='sudo nginx -s stop'
+# alias composer=composer
+# alias -g pgsqlstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+# alias -g pgsqlstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+# alias -g grunt=grunt
+# alias -g reloadhosts='dscacheutil -flushcache'
+# alias -g phpmysqlstart='launchctl load -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php53.plist && launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
+# alias -g phpmysqlstop='launchctl unload -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php53.plist && launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist'
+# alias -g nginxstart='sudo nginx'
+# alias -g nginxstop='sudo nginx -s stop'
 # alias -g p4merge='/Applications/p4merge.app/Contents/Resources/launchp4merge'
 
 # Wordpress bits
@@ -80,4 +80,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 export PATH="$HOME/Library/Python/2.7/bin:$PATH"
 
 export NVM_DIR="/Users/jai/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
